@@ -1,0 +1,9 @@
+{
+	"title": "  ",
+	"outputfile": "_sidebar.md",
+	"catalog": "all",
+	"ignores": ["node_modules"],
+	"unchanged": [],
+	"sortedBy": "-",
+	"disableTitleFormatting": false
+}
