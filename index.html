@@ -18,13 +18,10 @@
 
 	window.$docsify = {
 		name: '数字国土开发部',
-		repo: '',
-		loadSidebar: true,
-		alias: {
-			'/.*/_sidebar.md': '/_sidebar.md'
-		},
-		subMaxLevel: 4,
-		coverpage:false,
+		// repo: '',
+		loadNavbar: true,
+		loadSidebar: "SUMMARY.md",
+		subMaxLevel: 2,
 		//******************* 开启搜索插件 *********************//
 		// 完整配置参数
 		search: {
@@ -44,7 +41,6 @@
 		// 禁用emoji
 		noEmoji: true,
 		homepage: 'README.md',
-		loadNavbar: true,
 		auto2top: true, //切换页面后是否自动跳转到页面顶部
 	}
 </script>
