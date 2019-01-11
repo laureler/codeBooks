@@ -3,7 +3,7 @@
 | 是否使用 | 框架   |      地址      |  账号 | 密码| 注意事项
 |:----------:|:----------:|:-------------:|:------:|:------:|:------:|
 | <input type="checkbox" disabled checked></input>| oracle | jdbc:oracle:thin:@//192.168.10.97:1521/orcl |    root | root |注意：`schema值为：ZHJG_JOB` |
-| <input type="checkbox" disabled></input>| mongodb | mongodb | 192.168.10.58    | 无|无|
+| <input type="checkbox" disabled checked></input>| mongodb | mongodb | 192.168.10.58    | 无|无|
 
 ?> mainWeb/pubWeb配置文件参考
 
