@@ -2,7 +2,7 @@
   
 | 是否使用 | 框架   |      地址      |  账号 | 密码| 注意事项
 |:----------:|:----------:|:-------------:|:------:|:------|:------|
-| <input type="checkbox" disabled checked></input>| oracle | jdbc:oracle:thin:@//192.168.10.32:1521/orcl |    ibase_dev | ibase_dev |注意：当前账号密码`scheama值为：IBASE_DEV` |
+| <input type="checkbox" disabled checked></input>| oracle | jdbc:oracle:thin:@//192.168.10.32:1521/orcl |    ibase_dev | ibase_dev |注意：当前账号密码`schema值为：IBASE_DEV` |
 | <input type="checkbox" disabled checked></input>| mongodb | 192.168.10.32 |    无 |  无| 无|
 
 ?> mainWeb/pubWeb配置文件参考
