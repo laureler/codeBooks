@@ -6,10 +6,7 @@ A querystring parsing and stringifying library with some added security.
 ?> 一个解析querystring 和 字符串化的 npm library库，带有一些附加的安全性。
 
 #### 如何使用
-```ecmascript 6
-// 环境 node.js
-
-
+```javascript
 //引入qs库
 var qs = require('qs');                 
 //引入单元测试架构
