@@ -1,5 +1,4 @@
 *  css详解
-
   - [Border](前端技术/css详解/border/border.md)
     * [Border Background](前端技术/css详解/border/border_background.md)
     * [border最佳实践](前端技术/css详解/border/border最佳实践.md)
@@ -8,6 +7,7 @@
     * [z-index实践](前端技术/css详解/z-index/z-index实践.md)
     * [影响z-index的其他属性](前端技术/css详解/z-index/影响z-index的其他属性.md)
   * [Margin](前端技术/css详解/margin.md)
+  
 * Java Script
 
   - [01原型](前端技术/JavaScript/01原型/01原型.md)
@@ -43,5 +43,5 @@
     - 富文本编辑器
       - Wang Editor
         * [Index](前端技术/JavaScript/组件demo/富文本编辑器/wangEditor/index.md)
-* [Sidebar](前端技术/_sidebar.md)
-* [Index](前端技术/index.md)
+* npm常用库介绍
+	* [`qs`：组装、分析url参数](前端技术/npmlib/qs.md)
