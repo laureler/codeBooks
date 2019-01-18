@@ -33,9 +33,10 @@
     * [typeScript基础类型](前端技术/JavaScript/typeScript/typeScript基础类型.md)
     * [变量声明](前端技术/JavaScript/typeScript/变量声明.md)
     * [方法](前端技术/JavaScript/typeScript/方法.md)
-    * [类与接口](前端技术/JavaScript/typeScript/类与接口.md)
     * [模块](前端技术/JavaScript/typeScript/模块.md)
     * [泛型](前端技术/JavaScript/typeScript/泛型.md)
+    * [类与接口](前端技术/JavaScript/typeScript/类与接口.md)
+    * [装饰器](前端技术/JavaScript/typeScript/装饰器.md)
   - Vue
     * [01 Index](前端技术/JavaScript/vue/01index.md)
     * [02引入vue.js](前端技术/JavaScript/vue/02引入vue.js.md)
