@@ -4,7 +4,7 @@
   - [综合监管](ibase/配置模板/综合监管配置/config.properties.md)
 * 编号公式
 
-- [$对象扩展](ibase/编号公式/index.md)
+- [编号公式说明](ibase/编号公式/index.md)
 
 * 代码示例 
 
