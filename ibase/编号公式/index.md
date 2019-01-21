@@ -122,9 +122,9 @@ SnBuilderController实现对SnBuilderService进行简单的封装，对外提供
 | \$.batchsql(dsName,arrSqlInfo)                                          | List                                            | 执行批量查询 dsName:数据源查询服务配置名，用于支持多数据源的查询（暂未使用） arrSqlInfo【必须】：查询信息数组，每个元素是SqlInfo对象：{sql:语句命名,param:[参数名值对的Map对象列表]} （参见execsql相应参数说明） 返回每条sql语句返回的记录集数组：List\<List\<记录集\>\>。 其中第一层数组元素是各条sql语句的返回值数组（与传入的sql语句顺序对应）； 第二层数组元素是每条sql语句内不同组参数的返回的记录集结果（与param参数顺序对应，但一般只有一组参数） 记录集返回List\<Map\<String,Object\>\>（Map指一条记录结果，Key为字段名，Value为字段值）                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | \$.batchcud(dsName,arrSqlInfo)                                          | List                                            | 执行批量更新 dsName:数据源查询服务配置名，用于支持多数据源的查询（暂未使用） arrSqlInfo【必须】：查询信息数组，每个元素是SqlInfo对象（参见batchsql相应参数说明） 返回每条sql语句返回的受影响记录数：List\<int[]\>。 其中第一层数组元素是各条sql语句的返回值数组（与传入的sql语句顺序对应）； 第二层数组元素是每条sql语句内不同组参数的返回结果（与param参数顺序对应，每一项的值表示此参数下执行导致的影响记录数）                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 
-![](media/241b778567b6ed5590319e01ca53389d.png)
+![](./media/241b778567b6ed5590319e01ca53389d.png)
 
-![](media/52f2c510db20fbec29b064ee42f560cd.png)
+![](./media/52f2c510db20fbec29b064ee42f560cd.png)
 
 （注1）\$.X方法的返回值为一个数组，数组中的元素为AdministrativeDivision，该对象支持以下字段：
 
@@ -318,7 +318,7 @@ inputParamMap,Map\<String, String\> outParamsMap)
 
 注意：因为script文件加载到页面都是异步执行的，因此用此方法动态加载脚本文件时，不能在需要立即使用的场合。最佳加载位置是表单的“全局属性”中。
 
-![](media/5c00dfa336cb59d70bdb9be92cca6362.png)
+![](./media/5c00dfa336cb59d70bdb9be92cca6362.png)
 
 3.客户端运行时对象：
 
