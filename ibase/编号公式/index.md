@@ -709,7 +709,8 @@ double（浮点小数）、
 ###  2.3. <a name='3.O.getXxx'></a>（注3） $.O.getXxx()
 返回的组织项对象，为OrganInfoLocal类型。该对象支持以下字段：
 
- var cd = \$.O.getOwnerDept(‘89832874-8845-ad45-98ed-345734654623r54’); 
+ var cd = \$.O.getOwnerDept(‘89832874-8845-ad45-98ed-345734654623r54’);
+  
 |字段|类型|描述|
 |------|--------|-----|
 |cd.rid|字符串|组织项ID|
