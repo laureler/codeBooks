@@ -16,8 +16,81 @@
 |2|V1.1|添加表单对象说明|邓赟2017/7/18||获取子表单字段值；设置字段值说明|
 |3|V1.2|改版格式为markdown在线文档|吴云龙2019年1月22日||内容无修改（仅修改样式）|
 
-## 目录
+##  1. <a name=''></a>目录
+<!-- vscode-markdown-toc -->
+* 1. [目录](#)
+* 2. [$对象封装](#-1)
+		* 2.1. [$.print(msg)](#.printmsg)
+		* 2.2. [$.messager](#.messager)
+		* 2.3. [$.messager.progress(param)](#.messager.progressparam)
+		* 2.4. [$.messager.mask(param)](#.messager.maskparam)
+		* 2.5. [$.messager.confirm(title, msg, fn)](#.messager.confirmtitlemsgfn)
+		* 2.6. [$.Y](#.Y)
+		* 2.7. [$.y](#.y)
+		* 2.8. [$.M](#.M)
+		* 2.9. [$.m](#.m)
+		* 2.10. [$.D](#.D)
+		* 2.11. [$.d](#.d)
+		* 2.12. [$.nowStr()](#.nowStr)
+		* 2.13. [$.parseDate(strDate)](#.parseDatestrDate)
+		* 2.14. [$.N(numberLength, type)](#.NnumberLengthtype)
+		* 2.15. [$.UID](#.UID)
+		* 2.16. [$.Data](#.Data)
+		* 2.17. [$.load(function)](#.loadfunction)
+		* 2.18. [$.F](#.F)
+		* 2.19. [$.F.getFieldValue(String formDomainName)](#.F.getFieldValueStringformDomainName)
+		* 2.20. [$.F.getFieldDicText(String formDomainName)](#.F.getFieldDicTextStringformDomainName)
+		* 2.21. [$.F.getFieldDicValue(String formDomainName)](#.F.getFieldDicValueStringformDomainName)
+		* 2.22. [$.F.setFieldValue(String formDomainName, Object fieldValue, int sType)](#.F.setFieldValueStringformDomainNameObjectfieldValueintsType)
+		* 2.23. [$.F.setFieldDicText(String formDomainName, String text)](#.F.setFieldDicTextStringformDomainNameStringtext)
+		* 2.24. [$.F.findSubForm(String formDomainName, Map filter)](#.F.findSubFormStringformDomainNameMapfilter)
+		* 2.25. [$.F.getSelectedSubForm(String formDomainName, bool bChecked)](#.F.getSelectedSubFormStringformDomainNameboolbChecked)
+		* 2.26. [$.F.refreshSubForm(String formDomainName)](#.F.refreshSubFormStringformDomainName)
+		* 2.27. [$.F.isInitSubForm(String formDomainName)](#.F.isInitSubFormStringformDomainName)
+		* 2.28. [$.F.setCtrlHide(fname,true\|false)](#.F.setCtrlHidefnametruefalse)
+		* 2.29. [$.F.setCtrlDisable(fname,true\|false)](#.F.setCtrlDisablefnametruefalse)
+		* 2.30. [$.F.setCtrlColor(fname,true\|false, clrVal)](#.F.setCtrlColorfnametruefalseclrVal)
+		* 2.31. [$.F.getFormData()](#.F.getFormData)
+		* 2.32. [$.F.getBusinessno()](#.F.getBusinessno)
+		* 2.33. [$.F.getFieldNames()](#.F.getFieldNames)
+		* 2.34. [$.W](#.W)
+		* 2.35. [$.W.getTask(stepKey)](#.W.getTaskstepKey)
+		* 2.36. [$.W.save()](#.W.save)
+		* 2.37. [$.W.unwarp()](#.W.unwarp)
+		* 2.38. [$.O](#.O)
+		* 2.39. [$.O.getUserId()](#.O.getUserId)
+		* 2.40. [$.O.getUserName()](#.O.getUserName)
+		* 2.41. [$.O.getUserQua(uid,mark)](#.O.getUserQuauidmark)
+		* 2.42. [$.O.getFullName(uid)](#.O.getFullNameuid)
+		* 2.43. [$.O.getOrganInfo(uid)](#.O.getOrganInfouid)
+		* 2.44. [$.O.getOrganInfoByCode(code)](#.O.getOrganInfoByCodecode)
+		* 2.45. [$.O.getOrganInfoByName(fullName)](#.O.getOrganInfoByNamefullName)
+		* 2.46. [$.O.getOwnerDept(uid)](#.O.getOwnerDeptuid)
+		* 2.47. [$.O.getClassDept(uid,cls)](#.O.getClassDeptuidcls)
+		* 2.48. [$.O.getFirstPost(uid)](#.O.getFirstPostuid)
+		* 2.49. [$.O.getAllPost(uid)](#.O.getAllPostuid)
+		* 2.50. [$.O.isRole(uid,roleName)](#.O.isRoleuidroleName)
+		* 2.51. [$.O.isInclude(uid,puids)](#.O.isIncludeuidpuids)
+		* 2.52. [$.O.getAllUser(uids)](#.O.getAllUseruids)
+		* 2.53. [$.X(administratorCode)](#.XadministratorCode)
+		* 2.54. [$.C(catalogCode, showValue)](#.CcatalogCodeshowValue)
+		* 2.55. [$.S(catalog,key)](#.Scatalogkey)
+		* 2.56. [$.buildNo(expFla)](#.buildNoexpFla)
+		* 2.57. [$.execsql (dsName,sql1,param1,sql2,param2,sql3,param3)](#.execsqldsNamesql1param1sql2param2sql3param3)
+		* 2.58. [$.execproc(dsName,procName,inParam,outParam)](#.execprocdsNameprocNameinParamoutParam)
+		* 2.59. [$.batchsql(dsName,arrSqlInfo)](#.batchsqldsNamearrSqlInfo)
+		* 2.60. [$.batchcud(dsName,arrSqlInfo)](#.batchcuddsNamearrSqlInfo)
+	* 2.1. [（注1） $.X方法的返回值为一个数组，数组中的元素为AdministrativeDivision，](#1.XAdministrativeDivision)
+	* 2.2. [（注2） $.C返回值为一个数组，数组中的元素为CodeDict，](#2.CCodeDict)
+	* 2.3. [（注3） $.O.getXxx()](#3.O.getXxx)
+	* 2.4. [（注4）\$.W.getTask返回环节信息对象，为LinkInstanceEntity类型](#4.W.getTaskLinkInstanceEntity)
+	* 2.5. [4.2.1．通用说明](#-1)
 
+<!-- vscode-markdown-toc-config
+	numbering=true
+	autoSave=true
+	/vscode-markdown-toc-config -->
+<!-- /vscode-markdown-toc -->
 
 
 
@@ -66,10 +139,12 @@ SnBuilderController实现对SnBuilderService进行简单的封装，对外提供
 
 **由于服务端使用JavaScript表达式语法，因此表达式可以兼容服务端与客户端。**
 
-## $对象封装
+##  2. <a name='-1'></a>$对象封装
 
 ----------------------------------------------
-#### $.print(msg)                                                          
+####  2.1. <a name='.printmsg'>$.print(msg)</a>        
+<a name='.printmsg'>$.print(msg)</a>                                                
+
 * 类型：void                                            
 
 将消息内容输出到控制台
@@ -77,13 +152,13 @@ SnBuilderController实现对SnBuilderService进行简单的封装，对外提供
 * 服务器使用`System.out.println`并写入到\<日志根目录\>/scriptLog/{yyyy-MM-dd}.log文件                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
 
 ----------------------------------------------
-#### $.messager                                                            
+####  2.2. <a name='.messager'></a>$.messager                                                            
 * 类型：void                                            
 
 简单消息框封装类。仅前端表达式有效                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
 
 ----------------------------------------------
-#### $.messager.progress(param)                                            
+####  2.3. <a name='.messager.progressparam'></a>$.messager.progress(param)                                            
 * 类型：当param为"bar"时返回进度条控件； 其它情况返回空      
 
 显示一个进度提示框（进度可控制）
@@ -109,7 +184,7 @@ param = {
 3. "bar"，获得progressbar（进度条控件，可通过返回控件使用getValue/setValue控制进度）： var bar=\$.messager.progress("bar"); bar.progressbar("setValue",30); //也可重新设置进度条高度： bar.progressbar({height:4});                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
 
 ----------------------------------------------
-#### $.messager.mask(param)                                                
+####  2.4. <a name='.messager.maskparam'></a>$.messager.mask(param)                                                
 * 类型：                                                
 
 显示遮罩提示框。
@@ -128,7 +203,7 @@ $.messager.mask();
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
 
 ----------------------------------------------
-#### $.messager.confirm(title, msg, fn)                                    
+####  2.5. <a name='.messager.confirmtitlemsgfn'></a>$.messager.confirm(title, msg, fn)                                    
 * 类型：                                                
 
 显示一个包含“确定”和“取消”按钮的确认消息窗口。
@@ -151,49 +226,49 @@ $.messager.confirm('确认对话框', '您想要退出该系统吗？', function
 
 
 ----------------------------------------------
-#### $.Y                                                                   
+####  2.6. <a name='.Y'></a>$.Y                                                                   
 * 类型：字符串                                          
 
 当前时间的年份，四位有效数字。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
 
 ----------------------------------------------
-#### $.y                                                                   
+####  2.7. <a name='.y'></a>$.y                                                                   
 * 类型：字符串                                          
 
 当前时间的年份，两位有效数字。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
 
 ----------------------------------------------
-#### $.M                                                                   
+####  2.8. <a name='.M'></a>$.M                                                                   
 * 类型：字符串                                          
 
 当前时间的月份，固定两位有效数字，不足高位补零。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
 
 ----------------------------------------------
-#### $.m                                                                   
+####  2.9. <a name='.m'></a>$.m                                                                   
 * 类型：字符串                                          
 
 当前时间的月份，如果是一月到九月，高位不会补零。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
 
 ----------------------------------------------
-#### $.D                                                                   
+####  2.10. <a name='.D'></a>$.D                                                                   
 * 类型：字符串                                          
 
 当前月份的日号值，固定两位有效数字，不足高位补零。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
 
 ----------------------------------------------
-#### $.d                                                                   
+####  2.11. <a name='.d'></a>$.d                                                                   
 * 类型：字符串                                          
 
 当前月份的日号值，如果是一号到九号，高位不会补零。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
 
 ----------------------------------------------
-#### $.nowStr()                                                            
+####  2.12. <a name='.nowStr'></a>$.nowStr()                                                            
 * 类型：字符串                                          
 
 当前时间，格式：yyyy-MM-dd HH:mm:ss。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
 
 ----------------------------------------------
-#### $.parseDate(strDate)                                                  
+####  2.13. <a name='.parseDatestrDate'></a>$.parseDate(strDate)                                                  
 * 类型：日期                                            
 
 将日期格式的值转换成日期值对象。
@@ -206,7 +281,7 @@ yyyyMMdd、
 yyyyMMddHHmmss                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
 
 ----------------------------------------------
-#### $.N(numberLength, type)                                               
+####  2.14. <a name='.NnumberLengthtype'></a>$.N(numberLength, type)                                               
 * 类型：字符串                                          
 
 !> 仅在编号公式表达式中使用
@@ -220,19 +295,19 @@ yyyyMMddHHmmss
  * 返回值：【第一阶段】“替换流水号值”的分类值；【第二阶段】当前分类下的最大流水号。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
 
 ----------------------------------------------
-#### $.UID                                                                 
+####  2.15. <a name='.UID'></a>$.UID                                                                 
 * 类型：字符串                                          
 
 当前用户ID                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
 
 ----------------------------------------------
-#### $.Data                                                                
+####  2.16. <a name='.Data'></a>$.Data                                                                
 * 类型：Map                                             
 
 调用环境传入的自定义数据，依据运行场景解释所传入的内容。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
 
 ----------------------------------------------
-#### $.load(function)                                                      
+####  2.17. <a name='.loadfunction'></a>$.load(function)                                                      
 * 类型：                                                
 
 !> 此方法仅适用于前端表达式，且仅在vue架构的表单全局属性中调用有效（如果是freemarker架构，可以使用\$(function)）。
@@ -240,13 +315,13 @@ yyyyMMddHHmmss
 在表单加载完成后执行的代码。（表单加载完成，不保证子表单控件内的数据加载完成）                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
 
 ----------------------------------------------
-#### $.F                                                                   
+####  2.18. <a name='.F'></a>$.F                                                                   
 * 类型：对象                                            
 
 表单对象，用于访问表单数据。对应表单引擎接口“IFormService”（详细说明参见《iBase2.0[M0211]表单处理引擎.doc》）                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
 
 ----------------------------------------------
-#### $.F.getFieldValue(String formDomainName)                              
+####  2.19. <a name='.F.getFieldValueStringformDomainName'></a>$.F.getFieldValue(String formDomainName)                              
 * 类型：具体值类型                                      
 
 获取某个字段值（可获取按钮或静态文本[innerText]的显示文本内容）。
@@ -279,19 +354,19 @@ yyyyMMddHHmmss
 其中SYS_MRID的表名可以是子表单关联的任何一个表名（以后改进，也可省略表名）。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
 
 ----------------------------------------------
-#### $.F.getFieldDicText(String formDomainName)                            
+####  2.20. <a name='.F.getFieldDicTextStringformDomainName'></a>$.F.getFieldDicText(String formDomainName)                            
 * 类型：字符串                                          
 
 获取字典项控件的显示值（可获取按钮或静态文本的显示文本内容[innerHtml]），否则返回字段值。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
 
 ----------------------------------------------
-#### $.F.getFieldDicValue(String formDomainName)                           
+####  2.21. <a name='.F.getFieldDicValueStringformDomainName'></a>$.F.getFieldDicValue(String formDomainName)                           
 * 类型：字符串                                          
 
 获取字典项控件的内部值，否则返回字段值 。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
 
 ----------------------------------------------
-#### $.F.setFieldValue(String formDomainName, Object fieldValue, int sType)
+####  2.22. <a name='.F.setFieldValueStringformDomainNameObjectfieldValueintsType'></a>$.F.setFieldValue(String formDomainName, Object fieldValue, int sType)
 * 类型：                                                
 * formDomainName ???
 * fieldValue 
@@ -323,13 +398,13 @@ yyyyMMddHHmmss
 * sType(可选)：要填充的批量子表单数据结构一致时，传入1可加快填充的速度，默认不传。 
 
 ----------------------------------------------
-#### $.F.setFieldDicText(String formDomainName, String text)               
+####  2.23. <a name='.F.setFieldDicTextStringformDomainNameStringtext'></a>$.F.setFieldDicText(String formDomainName, String text)               
 * 类型：                                                
 
 为指定字段设置对应的文本项（可改变按钮或静态文本的显示文本内容[innerHtml]），否则设置指定值。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
 
 ----------------------------------------------
-#### $.F.findSubForm(String formDomainName, Map filter)                    
+####  2.24. <a name='.F.findSubFormStringformDomainNameMapfilter'></a>$.F.findSubForm(String formDomainName, Map filter)                    
 * 类型：键值对数组                                      
 
 返回找到的所有记录对象。
@@ -347,7 +422,7 @@ var filter = {
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
 
 ----------------------------------------------
-#### $.F.getSelectedSubForm(String formDomainName, bool bChecked)          
+####  2.25. <a name='.F.getSelectedSubFormStringformDomainNameboolbChecked'></a>$.F.getSelectedSubForm(String formDomainName, bool bChecked)          
 * 类型：键值对数组                                      
 返回找到的所有记录对象。
 
@@ -357,7 +432,7 @@ var filter = {
 !> 此方法仅适用于前端表达式。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
 
 ----------------------------------------------
-#### $.F.refreshSubForm(String formDomainName)                             
+####  2.26. <a name='.F.refreshSubFormStringformDomainName'></a>$.F.refreshSubForm(String formDomainName)                             
 * 类型：                                                
 
 重新加载子表单数据。 
@@ -365,7 +440,7 @@ var filter = {
 !> 此方法仅适用于前端表达式。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
 
 ----------------------------------------------
-#### $.F.isInitSubForm(String formDomainName)                              
+####  2.27. <a name='.F.isInitSubFormStringformDomainName'></a>$.F.isInitSubForm(String formDomainName)                              
 * 类型：布尔值                                          
 
 判断指定子表单控件是否正在初始化。 
@@ -375,28 +450,28 @@ var filter = {
 !> 此方法仅适用于前端表达式。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
 
 ----------------------------------------------
-#### $.F.setCtrlHide(fname,true\|false)                                    
+####  2.28. <a name='.F.setCtrlHidefnametruefalse'></a>$.F.setCtrlHide(fname,true\|false)                                    
 * 类型：                                                
 
 设置控件是否隐藏 
 !> 此方法仅适用于前端表达式。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
 
 ----------------------------------------------
-#### $.F.setCtrlDisable(fname,true\|false)                                 
+####  2.29. <a name='.F.setCtrlDisablefnametruefalse'></a>$.F.setCtrlDisable(fname,true\|false)                                 
 * 类型：                                                
 
 设置控件是否禁用 
 !> 此方法仅适用于前端表达式。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
 
 ----------------------------------------------
-#### $.F.setCtrlColor(fname,true\|false, clrVal)                           
+####  2.30. <a name='.F.setCtrlColorfnametruefalseclrVal'></a>$.F.setCtrlColor(fname,true\|false, clrVal)                           
 * 类型：                                                
 
 设置控件前景/背景色，如： \$.F.setCtrlColor("JOB_A.F1",true,"\#A02020") 
 !> 此方法仅适用于前端表达式。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
 
 ----------------------------------------------
-#### $.F.getFormData()                                                     
+####  2.31. <a name='.F.getFormData'></a>$.F.getFormData()                                                     
 * 类型：键值对                                          
 
 获取表单所有字段名值对。
@@ -404,61 +479,61 @@ var filter = {
 返回数据类型：Map\<String,Object\>。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
 
 ----------------------------------------------
-#### $.F.getBusinessno()                                                   
+####  2.32. <a name='.F.getBusinessno'></a>$.F.getBusinessno()                                                   
 * 类型：字符串                                          
 
 获取业务号                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
 
 ----------------------------------------------
-#### $.F.getFieldNames()                                                   
+####  2.33. <a name='.F.getFieldNames'></a>$.F.getFieldNames()                                                   
 * 类型：字符串列表                                      
 
 获取表单所有字段名。类型：List\<String\>。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
 
 ----------------------------------------------
-#### $.W                                                                   
+####  2.34. <a name='.W'></a>$.W                                                                   
 * 类型：对象                                            
 
 工作流引擎包装类                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
 
 ----------------------------------------------
-#### $.W.getTask(stepKey)                                                  
+####  2.35. <a name='.W.getTaskstepKey'></a>$.W.getTask(stepKey)                                                  
 * 类型：                                                
 
 获取当前流程指定环节的处理信息：传入“环节定义Key”，获取当前工作流的环节处理信息（包括：处理人，任务ID，环节名，办理时长等）。其中环节定义Key为空时，表示获取当前当前环节（任务）处理信息。（注4）                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
 
 ----------------------------------------------
-#### $.W.save()                                                            
+####  2.36. <a name='.W.save'></a>$.W.save()                                                            
 * 类型：                                                
 
 保存当前工作流及表单数据                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
 
 ----------------------------------------------
-#### $.W.unwarp()                                                          
+####  2.37. <a name='.W.unwarp'></a>$.W.unwarp()                                                          
 * 类型：对象                                            
 
 真正的工作引擎对象。仅服务端有效                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
 
 ----------------------------------------------
-#### $.O                                                                   
+####  2.38. <a name='.O'></a>$.O                                                                   
 * 类型：对象                                            
 
 组织结构操作对象                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
 
 ----------------------------------------------
-#### $.O.getUserId()                                                       
+####  2.39. <a name='.O.getUserId'></a>$.O.getUserId()                                                       
 * 类型：字符串                                          
 
 获取登录用户ID                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
 
 ----------------------------------------------
-#### $.O.getUserName()                                                     
+####  2.40. <a name='.O.getUserName'></a>$.O.getUserName()                                                     
 * 类型：字符串                                          
 
 获取登录用户名。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
 
 ----------------------------------------------
-#### $.O.getUserQua(uid,mark)                                              
+####  2.41. <a name='.O.getUserQuauidmark'></a>$.O.getUserQua(uid,mark)                                              
 * 类型：用户身份值                                      
 
 获取指定用户id的身份信息，如果不是用户id，则返回0。
@@ -472,25 +547,25 @@ var filter = {
 	返回：整数（返回的值表示哪些位有效：0=无任何位有效，1=第0位有效，2=第1位有效，3=第0和1位有效，4=第2位有效，5=第0和2位有效，6=第1和2位有效，7=第0、1和2位有效。依此类推）                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
 
 ----------------------------------------------
-#### $.O.getFullName(uid)                                                  
+####  2.42. <a name='.O.getFullNameuid'></a>$.O.getFullName(uid)                                                  
 * 类型：字符串                                          
 
 参数：uid，组织项ID。 获取层次名的字符串： 部门、岗位格式：XXX/YYY/ZZZ/\* 人员格式：XXX/YYY/ZZZ/NNN 角色格式：[RRR]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
 
 ----------------------------------------------
-#### $.O.getOrganInfo(uid)                                                 
+####  2.43. <a name='.O.getOrganInfouid'></a>$.O.getOrganInfo(uid)                                                 
 * 类型：组织项对象                                      
 
 获取指定id的组织项对象。 类型：OrganInfoLocal                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
 
 ----------------------------------------------
-#### $.O.getOrganInfoByCode(code)                                          
+####  2.44. <a name='.O.getOrganInfoByCodecode'></a>$.O.getOrganInfoByCode(code)                                          
 * 类型：组织项对象                                      
 
 根据组织项的内部代码获取组织项对象                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
 
 ----------------------------------------------
-#### $.O.getOrganInfoByName(fullName)                                      
+####  2.45. <a name='.O.getOrganInfoByNamefullName'></a>$.O.getOrganInfoByName(fullName)                                      
 * 类型：组织项对象                                      
 
 根据组织项的层次名获取组织项对象（从上向下找，如果层次中的名称找不到组织项，将返回空）
@@ -502,13 +577,13 @@ var filter = {
 * $.O.getOrganInfoByName("南方数码/研发中心/研发部/工程师/张三") 获取的是人员                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
 
 ----------------------------------------------
-#### $.O.getOwnerDept(uid)                                                 
+####  2.46. <a name='.O.getOwnerDeptuid'></a>$.O.getOwnerDept(uid)                                                 
 * 类型：组织项对象                                      
 
 获取直接部门，如果是人员，获取首要岗位的直接部门。 类型：OrganInfoLocal                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
 
 ----------------------------------------------
-#### $.O.getClassDept(uid,cls)                                             
+####  2.47. <a name='.O.getClassDeptuidcls'></a>$.O.getClassDept(uid,cls)                                             
 * 类型：组织项对象                                      
 
 获取指定级别的上级部门（status字段描述级别）。 
@@ -530,37 +605,37 @@ var filter = {
 2. 若uid是人员，获取的是首要岗位满足条件的上级部门。从直接部门向上查找，直到找到的部门级别等于或高于指定级别的部门。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
 
 ----------------------------------------------
-#### $.O.getFirstPost(uid)                                                 
+####  2.48. <a name='.O.getFirstPostuid'></a>$.O.getFirstPost(uid)                                                 
 * 类型：组织项对象                                      
 
 获取首要岗位，如果不是人员ID，返回空。 类型：OrganInfoLocal                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
 
 ----------------------------------------------
-#### $.O.getAllPost(uid)                                                   
+####  2.49. <a name='.O.getAllPostuid'></a>$.O.getAllPost(uid)                                                   
 * 类型：组织项对象数组                                  
 
 获取所有岗位，如果不是人员ID，返回长度为0的数组。 类型：OrganInfoLocal []。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
 
 ----------------------------------------------
-#### $.O.isRole(uid,roleName)                                              
+####  2.50. <a name='.O.isRoleuidroleName'></a>$.O.isRole(uid,roleName)                                              
 * 类型：布尔值                                          
 
 是否属于指定角色。uid，判断的组织项ID；roleName角色名(例如：“部门经理”)或角色代码(格式："\#"+代码，例如：“\#S1022”)。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
 
 ----------------------------------------------
-#### $.O.isInclude(uid,puids)                                              
+####  2.51. <a name='.O.isIncludeuidpuids'></a>$.O.isInclude(uid,puids)                                              
 * 类型：布尔值                                          
 
 是否包含在指定的组织项或下级中。uid，判断的组织项ID；puids，包含组织项列表字符串（以,分隔）                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
 
 ----------------------------------------------
-#### $.O.getAllUser(uids)                                                  
+####  2.52. <a name='.O.getAllUseruids'></a>$.O.getAllUser(uids)                                                  
 * 类型：组织项对象数组                                  
 
 获取指定组织项下包含的所有用户项。uids，需要展开的组织项列表字符串（以,分隔）                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
 
 ----------------------------------------------
-#### $.X(administratorCode)                                                
+####  2.53. <a name='.XadministratorCode'></a>$.X(administratorCode)                                                
 * 类型：数组                                            
 
 获取行政区划信息。类型：AdministrativeDivision[]。 
@@ -570,7 +645,7 @@ var filter = {
 第一项为省，第二项为市、第三项为县、第四项为乡、第五项为村、第六项为组、第七项为小组直到administratorCode指定的行政区划级别（最多7项）。说明见表后（注1）。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
 
 ----------------------------------------------
-#### $.C(catalogCode, showValue)                                           
+####  2.54. <a name='.CcatalogCodeshowValue'></a>$.C(catalogCode, showValue)                                           
 * 类型：字典对象数组                                    
 
 获取字典项信息。
@@ -579,7 +654,7 @@ var filter = {
 * 返回值：字典对象数组。如果未找到，返回长度为0的数组。说明见表后（注2）                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
 
 ----------------------------------------------
-#### $.S(catalog,key)                                                      
+####  2.55. <a name='.Scatalogkey'></a>$.S(catalog,key)                                                      
 * 类型：字符串                                          
 
 获得指定分类的系统配置项内容。 
@@ -593,7 +668,7 @@ var filter = {
 >$.S("单位信息","所属行政区")                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
 
 ----------------------------------------------
-#### $.buildNo(expFla)                                                     
+####  2.56. <a name='.buildNoexpFla'></a>$.buildNo(expFla)                                                     
 * 类型：字符串                                          
 
 通过指定的编号公式（使用编号公式定义模块定义需要的公式），生成唯一编号。 
@@ -603,7 +678,7 @@ var filter = {
 >查[2014]012号                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
 
 ----------------------------------------------
-#### $.execsql (dsName,sql1,param1,sql2,param2,sql3,param3)                
+####  2.57. <a name='.execsqldsNamesql1param1sql2param2sql3param3'></a>$.execsql (dsName,sql1,param1,sql2,param2,sql3,param3)                
 * 类型：Map                                             
 
 条件执行sql语句：
@@ -623,7 +698,7 @@ var filter = {
 > 如果没有执行语句，则设置为null。 返回每条sql语句的执行结果名值对的Map对象。key名分别为“sql1”，“sql2”，“sql3”，值为对应sql语句的结果： 如果是select语句，返回List\<Map\<String,Object\>\>格式的记录集（Map指一条记录结果，Key为字段名，Value为字段值）； 如果是insert、update、delete语句，返回影响的记录数。 若对应某条语句未执行，相应结果为null。                                                                                                                                                                                                                                                                                                                                                                  
 
 ----------------------------------------------
-#### $.execproc(dsName,procName,inParam,outParam)                          
+####  2.58. <a name='.execprocdsNameprocNameinParamoutParam'></a>$.execproc(dsName,procName,inParam,outParam)                          
 * 类型：Map                                             
 
 执行存贮过程。 
@@ -644,7 +719,7 @@ double（浮点小数）、
 > 注：为了兼容不同数据库存贮过程返回记录集的方式不同（Oracle通过输出参数返回，mysql/sqlserver通过查询语句返回），应统一按输出参数的方式调用（内部会正确处理通过查询语句返回的情况）。 返回存贮过程的输出参数名值对Map对象（Key为参数名）                                                                                                                                                                                                                                                                                                      
 
 ----------------------------------------------
-#### $.batchsql(dsName,arrSqlInfo)                                         
+####  2.59. <a name='.batchsqldsNamearrSqlInfo'></a>$.batchsql(dsName,arrSqlInfo)                                         
 * 类型：List                                            
 
 执行批量查询 
@@ -657,7 +732,7 @@ double（浮点小数）、
 	3. 记录集返回List\<Map\<String,Object\>\>（Map指一条记录结果，Key为字段名，Value为字段值）                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
 
 ----------------------------------------------
-#### $.batchcud(dsName,arrSqlInfo)                                         
+####  2.60. <a name='.batchcuddsNamearrSqlInfo'></a>$.batchcud(dsName,arrSqlInfo)                                         
 * 类型：List                                            
 
 执行批量更新 
@@ -674,7 +749,7 @@ double（浮点小数）、
 
 
 
-### （注1） $.X方法的返回值为一个数组，数组中的元素为AdministrativeDivision，
+###  2.1. <a name='1.XAdministrativeDivision'></a>（注1） $.X方法的返回值为一个数组，数组中的元素为AdministrativeDivision，
 
 该对象支持以下字段：
 `var ad = \$.X("440101")[0]`
@@ -696,7 +771,7 @@ double（浮点小数）、
 |XX|XX|XX|XXX|XXX|XXX XXX|
 |省或直辖市|省下的地级市|地级市下的区或县|区县下的街道或乡镇|描述乡镇下的村|按业务所需定义（一般描述村下的生产组或自然村落、及生产组下的小组）|
 
-### （注2） $.C返回值为一个数组，数组中的元素为CodeDict，
+###  2.2. <a name='2.CCodeDict'></a>（注2） $.C返回值为一个数组，数组中的元素为CodeDict，
 该对象支持以下字段：
  `var cd = \$.C("土地分类","001")[0]`
 
@@ -708,7 +783,7 @@ double（浮点小数）、
 | cd.showValue                        | 字符串 | 显示文本   |
 | cd.sortValue                        | 字符串 | 排序值     |
 
-### （注3） $.O.getXxx()
+###  2.3. <a name='3.O.getXxx'></a>（注3） $.O.getXxx()
 返回的组织项对象，为OrganInfoLocal类型。该对象支持以下字段：
 
  var cd = \$.O.getOwnerDept(‘89832874-8845-ad45-98ed-345734654623r54’); 
@@ -724,7 +799,7 @@ double（浮点小数）、
 |cd.sortValue|整数|排序值|
 |cd.parentId|字符串|所属父节点ID（部门/岗位，是上级部门ID；人员，是首要岗位ID，角色，是管理部门ID）|
 
-### （注4）\$.W.getTask返回环节信息对象，为LinkInstanceEntity类型
+###  2.4. <a name='4.W.getTaskLinkInstanceEntity'></a>（注4）\$.W.getTask返回环节信息对象，为LinkInstanceEntity类型
 
 var tk = \$.W.getTask(‘task3223421454’);
 
@@ -1082,7 +1157,7 @@ formService，表单对象
 服务实现
 --------
 
-### 4.2.1．通用说明
+###  2.5. <a name='-1'></a>4.2.1．通用说明
 
 类名：class **SnBuilderController**
 
