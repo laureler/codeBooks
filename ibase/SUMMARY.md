@@ -5,6 +5,7 @@
 * 编号公式
 
 - [编号公式说明](ibase/编号公式/index.md)
+- [编号公式说明HTML版](ibase/编号公式/html.md)
 
 * 代码示例 
 
