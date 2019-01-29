@@ -6,6 +6,9 @@
 * sql语句规范
   - [sql语句规范](ibase/java/定义实体类对象规则.md)
   
+* java
+	- [懒加载异常](ibase/java/懒加载异常.md)
+	
 * 编号公式
 
 - [编号公式说明](ibase/编号公式/index.md)
