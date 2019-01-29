@@ -2,6 +2,10 @@
 
   - [广东不动产](ibase/配置模板/广东省不动产配置/config.properties.md)
   - [综合监管](ibase/配置模板/综合监管配置/config.properties.md)
+
+* sql语句规范
+  - [sql语句规范](ibase/java/定义实体类对象规则.md)
+  
 * 编号公式
 
 - [编号公式说明](ibase/编号公式/index.md)
