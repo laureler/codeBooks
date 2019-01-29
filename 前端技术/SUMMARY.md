@@ -1,6 +1,4 @@
 - [npm包列表](前端技术/npmlib/常用列表.md)
-
-* [Qs](前端技术/npmlib/qs.md)
 	
 - css详解
   - [Border](前端技术/css详解/border/border.md)
@@ -12,6 +10,7 @@
     * [影响z-index的其他属性](前端技术/css详解/z-index/影响z-index的其他属性.md)
   * [Margin](前端技术/css详解/margin.md)
 - [Es 6](前端技术/es6/README.md)
+- [TypeScript](前端技术/TS/README.md)
 - Java Script
   - [01原型](前端技术/JavaScript/01原型/01原型.md)
   - Es 6
