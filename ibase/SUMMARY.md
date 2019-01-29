@@ -6,6 +6,8 @@
 * sql语句规范
   - [sql语句规范](ibase/java/定义实体类对象规则.md)
   
+* 前端
+	- [JS压缩与调试](ibase/前端/JS压缩与调试.md)
 * java
 	- [懒加载异常](ibase/java/懒加载异常.md)
 	
