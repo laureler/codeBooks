@@ -1,0 +1,7 @@
+var fs = require('fs');
+
+function* asyncJob(){
+	var f1 = yield fs.readFile('./index.txt')
+	console.log(f1)
+
+}

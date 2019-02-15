@@ -38,8 +38,8 @@
       - Promise对象
         * [Index 2](前端技术/JavaScript/es6/Promise对象/index2.md)
     - JavaScript模块
-      * [cmd规范](前端技术/JavaScript/JavaScript模块/cmd规范.md)
-      * [Index](前端技术/JavaScript/JavaScript模块/index.md)
+      * [cmd规范](前端技术/前端模块化规范/JavaScript模块/cmd规范.md)
+      * [Index](前端技术/前端模块化规范/JavaScript模块/index.md)
     - Node
       - Yarn
         * [yarn常见命令](前端技术/JavaScript/node/yarn/yarn常见命令.md)
