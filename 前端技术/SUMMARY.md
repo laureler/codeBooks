@@ -1,5 +1,7 @@
-# Your Book Title
+- [npm包列表](前端技术/npmlib/常用列表.md)
 
+* [Qs](前端技术/npmlib/qs.md)
+	
 - css详解
   - [Border](前端技术/css详解/border/border.md)
     * [Border Background](前端技术/css详解/border/border_background.md)
@@ -48,9 +50,7 @@
   - 组件demo
     - 富文本编辑器
       - Wang Editor
-        * [Index](前端技术/JavaScript/组件demo/富文本编辑器/wangEditor/index.md)
-- Npmlib
-  * [Qs](前端技术/npmlib/qs.md)
+        * [Index](前端技术/JavaScript/组件demo/富文本编辑器/wangEditor/index.md)  
 - 前端测试
   - [e2e单元测试](前端技术/前端测试/e2e单元测试/e2e单元测试.md)
     * [e2e单元测试之Nightwatch自动化测试框架](前端技术/前端测试/e2e单元测试/e2e单元测试之Nightwatch自动化测试框架.md)
