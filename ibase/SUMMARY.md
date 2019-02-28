@@ -10,6 +10,8 @@
   
 * 前端
 	- [JS压缩与调试](ibase/前端/JS压缩与调试.md)
+* 部署记录
+	- [部署mysql](ibase/docker配置/mysql.md)
 	
 		
 * java
