@@ -1,6 +1,6 @@
 * npm 常用包
-- [npm包列表](前端技术/npmlib/常用列表.md)
-- [pm2使用](前端技术/npmlib/pm2.md)
+	- [npm包列表](前端技术/npmlib/常用列表.md)
+	- [pm2使用](前端技术/npmlib/pm2.md)
 	
 
 - [前端模块化](前端技术/前端模块化规范/readme.md)

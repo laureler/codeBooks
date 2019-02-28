@@ -22,24 +22,47 @@ $ pm2 delete   <app_name|id|'all'|json_conf>
 	}
 }
 ```
+> pm2 守护启动 start
+
 ```cmd
-	// pm2 守护启动 start
 	pm2 start npm -- run start
-	// pm2 守护启动 test
-	pm2 start npm -- run test
-	// pm2 守护启动 summary
+```
+
+> pm2 守护启动 test
+
+```cmd
+	pm2 start npm -- run test	
+```
+
+> pm2 守护启动 summary
+
+```cmd
 	pm2 start npm -- run summary
 ```
 
 #### 示例：
 
+
+> 查看 pm2中的列表
+
 ```cmd
-// 查看 pm2中的列表
-$ pm2 list  
-// 停止应用
+$ pm2 list
+```
+  
+> 停止应用
+
+```cmd
 $ pm2 stop     <app_name|id|'all'|json_conf>
-// 重启应用
+```
+
+> 重启应用
+
+```cmd
 $ pm2 restart  <app_name|id|'all'|json_conf>
-// 删除应用
+```
+
+> 删除应用
+
+```cmd
 $ pm2 delete   <app_name|id|'all'|json_conf>
 ```
