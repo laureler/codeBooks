@@ -7,7 +7,8 @@ $ pm2 restart  <app_name|id|'all'|json_conf>
 $ pm2 delete   <app_name|id|'all'|json_conf>
 ```
 
-示例：
+#### 示例：
+
 例如你的package.json
 ```json
 {
@@ -28,4 +29,17 @@ $ pm2 delete   <app_name|id|'all'|json_conf>
 	pm2 start npm -- run test
 	// pm2 守护启动 summary
 	pm2 start npm -- run summary
+```
+
+#### 示例：
+
+```cmd
+// 查看 pm2中的列表
+$ pm2 list  
+// 停止应用
+$ pm2 stop     <app_name|id|'all'|json_conf>
+// 重启应用
+$ pm2 restart  <app_name|id|'all'|json_conf>
+// 删除应用
+$ pm2 delete   <app_name|id|'all'|json_conf>
 ```
