@@ -52,11 +52,11 @@ hibernate.show_sql=true
 hibernate.hbm2ddl.auto=update
 
 #mongoDB数据库配置
-mongo.host=192.168.10.32
+mongo.host=192.168.10.58
 mongo.port=27017
 mongo.timeout=10000
 #
-mongo.database=ibase2hz
+mongo.database=ibase2oracle
 mongo.username=
 mongo.password=
 

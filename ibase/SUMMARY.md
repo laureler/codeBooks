@@ -6,6 +6,7 @@
 
 * 规范说明
 	- [缓存控制](ibase/缓存控制/缓存控制.md)
+	- [git flow](ibase/gitFlow/gitFlow.md)	
 * sql语句规范
   - [sql语句规范](ibase/java/定义实体类对象规则.md)
   
