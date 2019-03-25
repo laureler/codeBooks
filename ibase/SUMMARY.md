@@ -35,3 +35,6 @@
   - [附件管理代码](ibase/功能示例/附件管理/附件管理代码.md)
   - [定义实体对象规则](ibase/功能示例/技巧总结/定义实体对象规则.md)
   - [Swagger](ibase/功能示例/swagger/swagger与springmvc整合配置.md)
+
+* 浏览器兼容
+  - [IE11兼容问题](ibase/浏览器兼容/IE11兼容问题.md)
