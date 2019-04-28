@@ -14,7 +14,8 @@
   - [JS压缩与调试](ibase/前端/JS压缩与调试.md)
 	
 * 部署记录
-  - [部署mysql](ibase/docker配置/mysql.md)	
+  - [域名跳转](ibase/域名跳转/域名跳转.md)
+  - [部署mysql](ibase/docker配置/mysql.md)
 * java
   - [懒加载异常](ibase/java/懒加载异常.md)
 * 表达式
