@@ -1,6 +1,6 @@
-* 配置模板
-
-
+* ibase2.0平台更新记录
+  - [ibase2.0平台更新记录](ibase/更新记录/更新列表.md)
+  - [ibase 微信平台更新记录](ibase/更新记录/更新列表.md)
 
 * 规范说明
   - [缓存控制](ibase/缓存控制/缓存控制.md)
@@ -9,9 +9,9 @@
   - [sql语句规范](ibase/java/定义实体类对象规则.md)
   
 * 前端
-  - [JS压缩与调试](ibase/前端/JS压缩与调试.md)
+  - ###### [JS压缩与调试](ibase/前端/JS压缩与调试.md)
 	
-* 部署记录
+* 部署相关
   - [域名跳转](ibase/域名跳转/域名跳转.md)
   - [部署mysql](ibase/docker配置/mysql.md)
 * java
