@@ -10,11 +10,75 @@
   * [SUMMARY](DesignMode/SUMMARY.md)
   * [设计模式简介](DesignMode/设计模式简介.md)
 - [Ibase](ibase/README.md)
+  - docker配置
+    * [Index](ibase/docker配置/index.md)
+    * [Mysql](ibase/docker配置/mysql.md)
+  - [Git Flow](ibase/gitFlow/gitFlow.md)
+  - Java
+    * [定义实体类对象规则](ibase/java/定义实体类对象规则.md)
+    * [懒加载异常](ibase/java/懒加载异常.md)
+  - [内外分离](ibase/内外分离/内外分离.md)
+  - 前端
+    * [JS压缩与调试](ibase/前端/JS压缩与调试.md)
+  - 功能示例
+    - Swagger
+      * [swagger与springmvc整合配置](ibase/功能示例/swagger/swagger与springmvc整合配置.md)
+    - [批后监管模块](ibase/功能示例/批后监管模块/批后监管模块.md)
+    - 技巧总结
+      * [定义实体对象规则](ibase/功能示例/技巧总结/定义实体对象规则.md)
+    - 表单引擎
+      * [工作流调用接口bug](ibase/功能示例/表单引擎/工作流调用接口bug.md)
+    - 采矿权管理
+      * [采矿权独立模块配置](ibase/功能示例/采矿权管理/采矿权独立模块配置.md)
+    - 附件管理
+      * [PDF预览](ibase/功能示例/附件管理/PDF预览.md)
+      * [上传附件](ibase/功能示例/附件管理/上传附件.md)
+      * [图片预览](ibase/功能示例/附件管理/图片预览.md)
+      * [附件管理代码](ibase/功能示例/附件管理/附件管理代码.md)
+      * [附件预览概述](ibase/功能示例/附件管理/附件预览概述.md)
+    * [全局变量](ibase/功能示例/全局变量.md)
+    * [全局方法](ibase/功能示例/全局方法.md)
+    * [权限控制](ibase/功能示例/权限控制.md)
+  - [域名跳转](ibase/域名跳转/域名跳转.md)
+  - 微信公众号
+    - 接口文档
+      - 中山
+        * [中山专属接口](ibase/微信公众号/接口文档/中山/中山专属接口.md)
+        * [中山变更接口](ibase/微信公众号/接口文档/中山/中山变更接口.md)
+      * [业务确认和进度查询](ibase/微信公众号/接口文档/业务确认和进度查询.md)
+      * [个人中心接口文档](ibase/微信公众号/接口文档/个人中心接口文档.md)
+      * [个人中心用户自定义配置](ibase/微信公众号/接口文档/个人中心用户自定义配置.md)
+      * [人脸识别和信息确认](ibase/微信公众号/接口文档/人脸识别和信息确认.md)
+      * [导航功能](ibase/微信公众号/接口文档/导航功能.md)
+      * [开发商预约申请](ibase/微信公众号/接口文档/开发商预约申请.md)
+      * [排队取号](ibase/微信公众号/接口文档/排队取号.md)
+      * [政务资讯](ibase/微信公众号/接口文档/政务资讯.md)
+      * [通用接口](ibase/微信公众号/接口文档/通用接口.md)
+      * [预约申请](ibase/微信公众号/接口文档/预约申请.md)
+    * [人脸识别相关文档](ibase/微信公众号/人脸识别相关文档.md)
+  - 更新记录
+    * [更新列表](ibase/更新记录/更新列表.md)
+  - 更新记录（微信平台）
+    * [更新列表](ibase/更新记录（微信平台）/更新列表.md)
+  - 浏览器兼容
+    * [IE11兼容问题](ibase/浏览器兼容/IE11兼容问题.md)
+  - [缓存控制](ibase/缓存控制/缓存控制.md)
+  - 编号公式
+    * [Html](ibase/编号公式/html.md)
+    * [Index](ibase/编号公式/index.md)
+  - 表达式
+    * [表达式书写示例](ibase/表达式/表达式书写示例.md)
+  - 部署相关
+    * [配置文件](ibase/部署相关/配置文件.md)
   - 配置模板
     - 广东省不动产配置
       * [config.properties](ibase/配置模板/广东省不动产配置/config.properties.md)
+    - 惠东县涉税平台
+      * [Index](ibase/配置模板/惠东县涉税平台/index.md)
     - 综合监管配置
       * [config.properties](ibase/配置模板/综合监管配置/config.properties.md)
+  - 项目划分
+    * [项目列表](ibase/项目划分/项目列表.md)
   * [SUMMARY](ibase/SUMMARY.md)
 - 前后端分离与结合
   * [目录结构参考](前后端分离与结合/目录结构参考.md)
@@ -37,9 +101,6 @@
         * [Index](前端技术/JavaScript/es6/Generator对象/index.md)
       - Promise对象
         * [Index 2](前端技术/JavaScript/es6/Promise对象/index2.md)
-    - JavaScript模块
-      * [cmd规范](前端技术/前端模块化规范/JavaScript模块/cmd规范.md)
-      * [Index](前端技术/前端模块化规范/JavaScript模块/index.md)
     - Node
       - Yarn
         * [yarn常见命令](前端技术/JavaScript/node/yarn/yarn常见命令.md)
@@ -49,13 +110,14 @@
       * [package.json](前端技术/JavaScript/node/package.json.md)
       * [webpack常用包](前端技术/JavaScript/node/webpack常用包.md)
     - Type Script
-      * [01.ts简介](前端技术/JavaScript/typeScript/01.ts简介.md)
-      * [02typeScript基础类型](前端技术/JavaScript/typeScript/02typeScript基础类型.md)
-      * [03变量声明](前端技术/JavaScript/typeScript/03变量声明.md)
-      * [04方法](前端技术/JavaScript/typeScript/04方法.md)
-      * [05类与接口](前端技术/JavaScript/typeScript/05类与接口.md)
-      * [06泛型](前端技术/JavaScript/typeScript/06泛型.md)
-      * [07模块](前端技术/JavaScript/typeScript/07模块.md)
+      * [ts简介](前端技术/JavaScript/typeScript/ts简介.md)
+      * [typeScript基础类型](前端技术/JavaScript/typeScript/typeScript基础类型.md)
+      * [变量声明](前端技术/JavaScript/typeScript/变量声明.md)
+      * [方法](前端技术/JavaScript/typeScript/方法.md)
+      * [模块](前端技术/JavaScript/typeScript/模块.md)
+      * [泛型](前端技术/JavaScript/typeScript/泛型.md)
+      * [类与接口](前端技术/JavaScript/typeScript/类与接口.md)
+      * [装饰器](前端技术/JavaScript/typeScript/装饰器.md)
     - Vue
       * [01 Index](前端技术/JavaScript/vue/01index.md)
       * [02引入vue.js](前端技术/JavaScript/vue/02引入vue.js.md)
@@ -69,12 +131,24 @@
         - Wang Editor
           * [Index](前端技术/JavaScript/组件demo/富文本编辑器/wangEditor/index.md)
   - Npmlib
+    * [Axios](前端技术/npmlib/axios.md)
+    * [npm常用命令](前端技术/npmlib/npm常用命令.md)
+    * [Pm 2](前端技术/npmlib/pm2.md)
     * [Qs](前端技术/npmlib/qs.md)
+    * [Ls](前端技术/npmlib/vue-ls.md)
+    * [常用列表](前端技术/npmlib/常用列表.md)
+  - [TS](前端技术/TS/README.md)
+  - [前端模块化规范](前端技术/前端模块化规范/readme.md)
+    - JavaScript模块
+      * [cmd规范](前端技术/前端模块化规范/JavaScript模块/cmd规范.md)
+      * [Index](前端技术/前端模块化规范/JavaScript模块/index.md)
   - 前端测试
     - [e2e单元测试](前端技术/前端测试/e2e单元测试/e2e单元测试.md)
       * [e2e单元测试之Nightwatch自动化测试框架](前端技术/前端测试/e2e单元测试/e2e单元测试之Nightwatch自动化测试框架.md)
   * [SUMMARY](前端技术/SUMMARY.md)
-- 开发基础
+- [开发基础](开发基础/README.md)
+  - Docker
+    * [Basic](开发基础/docker/basic.md)
   - jetbrains系列
     * [jetbrains设置内存](开发基础/jetbrains系列/jetbrains设置内存.md)
     * [添加git上传(push)图标](开发基础/jetbrains系列/添加git上传(push)图标.md)
@@ -86,7 +160,7 @@
     * [md后缀](开发基础/文件类型大全/md后缀.md)
     * [yml后缀](开发基础/文件类型大全/yml后缀.md)
   - [渗透测试](开发基础/渗透测试/渗透测试.md)
-  * [markdown语法模板](开发基础/markdown语法模板.md)
+  * [SUMMARY](开发基础/SUMMARY.md)
 - [服务端技术](服务端技术/README.md)
   - java架构
     - Maven
