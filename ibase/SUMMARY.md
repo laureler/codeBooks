@@ -7,7 +7,6 @@
   - [git flow](ibase/gitFlow/gitFlow.md)	
 * sql语句规范
   - [sql语句规范](ibase/java/定义实体类对象规则.md)
-  - [sql语句规范2](ibase/java/定义实体类对象规则.md)
   
 * 前端
   - [JS压缩与调试](ibase/前端/JS压缩与调试.md)
