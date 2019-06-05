@@ -15,6 +15,8 @@
   - [域名跳转](ibase/域名跳转/域名跳转.md)
   - [部署mysql](ibase/docker配置/mysql.md)
   - [内外分离](ibase/内外分离/内外分离.md)
+  - [ibase2.0模块配置地址](ibase/ibase2.0模块配置/ibase2.0模块配置地址.md)
+
 * java
   - [懒加载异常](ibase/java/懒加载异常.md)
 * 表达式
