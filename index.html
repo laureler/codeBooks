@@ -19,9 +19,11 @@
 	window.$docsify = {
 		name: '数字国土开发部',
 		repo: 'http://192.168.10.85:8081/landdevlopmentserver/noteonline',
-		loadNavbar: true,
-		loadSidebar: "SUMMARY.md",
-		subMaxLevel: 3,
+		// 指定
+		loadNavbar: "navbar.md",
+		loadSidebar: "sidebar.md",
+		subMaxLevel: 2,
+
 		//******************* 开启搜索插件 *********************//
 		// 完整配置参数
 		search: {
@@ -32,15 +34,14 @@
 			// 搜索标题的最大程级, 1 - 6
 			depth: 6
 		},
-		//******************* 结束搜索插件 *********************//
+
 		//******************* 开始vue插件 *********************//
 		// plugins: [
 		// 	DemoBoxVue.create(jsResources, cssResources, bootCode)
 		// ]
-		//******************* 结束vue插件 *********************//
 		// 禁用emoji
 		noEmoji: true,
-		homepage: 'README.md',
+		homepage: 'readme.md',
 		auto2top: true, //切换页面后是否自动跳转到页面顶部
 	}
 </script>

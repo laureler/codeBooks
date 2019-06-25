@@ -9,7 +9,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "docsify serve --open",
-    "summary": "book sm"
+    "summary": "book sm -r ibase -o ./sidebar.md -t ''",
+    "summary-dir":"book sm -r 版本更新 -o ./版本更新/sidebar.md -t 'titleName'"
   },
   "dependencies": {
     "docsify": "^4.8.6"
