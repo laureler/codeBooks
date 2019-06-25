@@ -42,12 +42,12 @@
 由于项目完全是静态页面，所以可以利用任意服务来响应网络请求即可。
 1. 利用tomcat服务器
 	* 直接把项目文件夹放置在 tomcat/webapps/目录下，并且启动tomcat即可。
-	![tomcat目录](tomcat.png)
+	![tomcat目录](img/tomcat.png)
 	
 	* tomcat启动后，访问`http://localhost:8080`即可
 2. 利用nginx映射资源(推荐)
 	* 下载nginx,并且安装，这里以windows平台为例：
-	![nginx目录](nginx.png)
+	![nginx目录](img/nginx.png)
 	* 修改nginx映射你的文件 nginx/config/nginx.conf,找到nginx配置中的server选项,这里以3000端口为例
 ```nginx.conf
 	server {
