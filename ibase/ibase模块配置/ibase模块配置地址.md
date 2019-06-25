@@ -1,7 +1,7 @@
 #Ibase2.0惠州模块地址配置
 
 
-####  1.模块管理
+## ##   1.模块管理
 部署完项目之后发现有很多模块没有，只有一部分，这是需要我们自己配置的，下面做一个例子，后面参照这个配置就行。
 例如:访问地址是：http://172.16.50.230:8080/mainWeb/index/1
 模块管理的地址：/mainWeb/system/submodule
@@ -12,7 +12,9 @@
 添加完模块管理模块直接点击进去，直接在里面添加你需要的模块，输入模块地址就可以了，保存修改，刷新页面，就会显示出来。
 ![](images/图片2.png)
 
-##系统设置
+## 系统设置
+
+ 
 | 名称 | 地址|
 |:-----|:----|
 | 业务定义| 阿萨德|
@@ -39,7 +41,8 @@
 |行政区划管理|/mainWeb/system/adminDivision|
 |行政区划列数据|/mainWeb/system/listAdminDivision|
 
-##个性化设置
+## 个性化设置
+ 
 | 名称 | 地址|
 |:-----|:----|
 | 个人设置 | /mainWeb/system/personalConfigure |
@@ -47,18 +50,21 @@
 | 历史消息 | /mainWeb/system/historyMessage |
 | 修改密码 | /mainWeb/system/passWordChange |
 
-##业务配置
+## 业务配置
+ 
 | 名称 | 地址|
 |:-----|:----|
 | 业务提取配置 | /workflowWebService/businessConfiguration|
 | 业务规则配制 | /workflowWebService/openColmnDetail|
 
-##统计分析
+## 统计分析
+ 
 | 名称 | 地址|
 |:-----|:----|
 | 工作统计 | /mainWeb/system/workCount|
 
-##地图管理
+## 地图管理
+ 
 | 名称 | 地址|
 |:-----|:----|
 | 业务定位配置 | xxx/webgisWebService/locator/index   (这个有点特殊需要加你访问地址，xxx是占位符，代表访问地址)|
@@ -70,21 +76,24 @@
 | 功能面板 | /webgisWebService/panel/index |
 | 模糊搜索 | /webgisWebService/globalsearch/index |
 
-##办公管理
+## 办公管理
+ 
 | 名称 | 地址|
 |:-----|:----|
 | 公正书管理| /bdcdjWebService/notarialManage/notarialManage.html|
 | 照片管理| /bdcdjWebService/photomanage/photomanage.html|
 
-##收费管理
+## 收费管理
+ 
 | 名称 | 地址|
 |:-----|:----|
 | 服务费明细 | /bdcdjWebService/coverCharge/|
 | 服务费管理 | /bdcdjWebService/coverChargeManage/coverChargeManage.html|
-|  登记费管理 | /bdcdjWebService/bregistration/|
+|  登记费管理 | /bdcdjWebService egistration/|
 
-##业务辅助
+## 业务辅助
 
+ 
 | 名称 | 地址|
 |:-----|:----|
 | 楼盘表管理 | /bdcdjWebService/buildingTable/|
@@ -97,14 +106,16 @@
 | 我的草稿箱 | /pubWeb/pub/businessDraft|
 | 进度查询 | /pubWeb/pub/businessProgress|
 
-##证书管理
+## 证书管理
+ 
 | 名称 | 地址|
 |:-----|:----|
 | 批量发证 |/bdcdjWebService/batchIssuing/|
 | 证书打印 |/bdcdjWebService/certificate|  
 | 证书补打 |/bdcdjWebService/supplement|
 
-##我的工作
+## 我的工作
+ 
 | 名称 | 地址|
 |:-----|:----|
 | 业务查询| /workflowWebService/queryType/businessMainPage|
@@ -116,7 +127,8 @@
 | 办结工作| /mainWeb/myjob/concludedJob|
 | 监控工作| /mainWeb/myjob/monitorJob|
 
-##业务登记管理系统
+## 业务登记管理系统
+ 
 | 名称 | 地址|
 |:-----|:----|
 | 修改密码权限| /mainWeb/system/changepwd|
