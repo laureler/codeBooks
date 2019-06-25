@@ -1,15 +1,8 @@
-- docker配置
-  * [Index](ibase/docker配置/index.md)
-  * [Mysql](ibase/docker配置/mysql.md)
+
 - [Git Flow](ibase/gitFlow/gitFlow.md)
 - ibase模块配置
   * [ibase模块配置地址](ibase/ibase模块配置/ibase模块配置地址.md)
-- Java
-  * [定义实体类对象规则](ibase/java/定义实体类对象规则.md)
-  * [懒加载异常](ibase/java/懒加载异常.md)
-- [内外分离](ibase/内外分离/内外分离.md)
-- 前端
-  * [JS压缩与调试](ibase/前端/JS压缩与调试.md)
+- [内外网分离](ibase/内外网分离/内外网分离.md)
 - 功能示例
   - Swagger
     * [swagger与springmvc整合配置](ibase/功能示例/swagger/swagger与springmvc整合配置.md)
@@ -29,7 +22,6 @@
   * [全局变量](ibase/功能示例/全局变量.md)
   * [全局方法](ibase/功能示例/全局方法.md)
   * [权限控制](ibase/功能示例/权限控制.md)
-- [域名跳转](ibase/域名跳转/域名跳转.md)
 - 微信公众号
   - 接口文档
     - 中山
@@ -54,19 +46,15 @@
     - 短信管理模块
       * [短信列表接口文档](ibase/接口文档/一张图电子政务/短信管理模块/短信列表接口文档.md)
     * [子系统首页](ibase/接口文档/一张图电子政务/子系统首页.md)
-- 更新记录
-  * [更新列表](ibase/更新记录/更新列表.md)
-- 更新记录（微信平台）
-  * [更新列表](ibase/更新记录（微信平台）/更新列表.md)
 - 浏览器兼容
   * [IE11兼容问题](ibase/浏览器兼容/IE11兼容问题.md)
-- [缓存控制](ibase/缓存控制/缓存控制.md)
 - 编号公式
   * [Html](ibase/编号公式/html.md)
   * [Index](ibase/编号公式/index.md)
 - 表达式
   * [表达式书写示例](ibase/表达式/表达式书写示例.md)
 - 部署相关
+  - [域名跳转](ibase/部署相关/域名跳转/域名跳转.md)
   * [配置文件](ibase/部署相关/配置文件.md)
 - 配置模板
   - 广东省不动产配置
@@ -75,6 +63,3 @@
     * [Index](ibase/配置模板/惠东县涉税平台/index.md)
   - 综合监管配置
     * [config.properties](ibase/配置模板/综合监管配置/config.properties.md)
-- 项目划分
-  * [项目列表](ibase/项目划分/项目列表.md)
-

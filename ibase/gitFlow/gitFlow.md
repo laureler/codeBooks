@@ -1,6 +1,6 @@
 #### ibase2.0 代码版本控制示意图
 
-![GIT-FLOW](GIT-FLOW.jpg)
+![GIT-FLOW](img/GIT-FLOW.jpg)
 
 
 #### 注意事项：
@@ -41,17 +41,17 @@
 
 ###### 使用tortoiseGit检出分支
 
-![tortoiseGit检出分支](tortoisegit检出.png)
-![tortoiseGit检出分支](tortoisegit检出2.png)
-![tortoiseGit检出分支](tortoisegit检出3.png)
+![tortoiseGit检出分支](img/tortoisegit检出.png)
+![tortoiseGit检出分支](img/tortoisegit检出2.png)
+![tortoiseGit检出分支](img/tortoisegit检出3.png)
 
 ###### 使用git bash检出分支
 
-![git检出分支](git检出分支.png)
+![git检出分支](img/git检出分支.png)
 
 ###### 基于intellij idea检出分支
-![intellij idea检出分支](intellij-checkout.png)
-![intellij idea检出分支](intellij-checkout2.png)
+![intellij idea检出分支](img/intellij-checkout.png)
+![intellij idea检出分支](img/intellij-checkout2.png)
 
 
 #### 合并分支
@@ -66,12 +66,12 @@
 
 ###### 使用intellij合并
 
-![intellij merge](intellij-merge.png)
+![intellij merge](img/intellij-merge.png)
 
 ###### 使用tortoise git合并
 将 dev分支合并到当前分支
-![tortoiseGit合并](tortoiseGit-merge.png)
-![tortoiseGit合并2](tortoiseGit-merge2.png)
+![tortoiseGit合并](img/tortoiseGit-merge.png)
+![tortoiseGit合并2](img/tortoiseGit-merge2.png)
 
 #### 删除分支
 
