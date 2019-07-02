@@ -89,3 +89,55 @@ sha1加密大写密码：356A192B7913B04C54574D18C28D46E6395428AB
 	...
 </html>
 ```
+
+## 移动端验证流程
+
+1. 在vue-router中存在`meta`的`isNeedLogin`属性，判断该页面是否需要cas登陆验证，其中的isPersonalHomePage属性是判断是否需要个人中心流程验证的
+
+2. 每个页面进入之前都要判断当前页面是否需要cas登陆，而是否已cas登陆，则通过<a href="#ibase/微信公众号/接口文档/移动端cas登陆相关文档?id=验证是否已登陆接口">/mainWeb/initLogin</a>接口判断
+
+## vue-router中实现
+
+```js
+router.beforeEach((to, from, next) => {
+
+	// 如果是要进入个人中心首页或相关页面，需要验证配置和人脸识别
+	if (!to.meta.isNeedLogin && to.meta.isPersonalHomePage) {
+		if ((/^true$/i).test(store.getters.getVerifyState)) {
+			// 完成人脸识别表示已完成个人设置
+			next();
+		} else {
+			// 开始个人设置
+			next({ path: '/preApprovenew', query: { isPersonalHomeCheck: true } });
+		}
+	}
+
+	if (from.path !== 'checkLogin' && to.meta.isNeedLogin) {
+		fetch('/mainWeb/initLogin').then(response => {
+			if (/html/i.test(response)) {
+				// 返回若是html页面，则表示未cas登陆
+				next({ path: '/checkLogin', query: { isTo: to.path }});
+			} else {
+				// cas登陆成功
+				if (to.meta.isPersonalHomePage) {
+					if ((/^true$/i).test(store.getters.getVerifyState)) {
+						// 完成人脸识别表示已完成个人设置
+						next();
+					} else {
+						// 开始个人设置
+						next({ path: '/preApprovenew', query: { isPersonalHomeCheck: true } });
+					}
+				} else {
+					next();
+				}
+			}
+		}).catch(error => {
+			console.log(error);
+			next({ path: '/checkLogin', query: { isTo: to.path }});
+		});
+	} else {
+		next();
+	}
+
+});
+```
