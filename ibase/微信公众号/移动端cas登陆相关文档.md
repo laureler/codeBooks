@@ -90,6 +90,8 @@ sha1加密大写密码：356A192B7913B04C54574D18C28D46E6395428AB
 </html>
 ```
 
+> 这些返回都是在请求success响应中处理
+
 ## 移动端验证流程
 
 1. 在vue-router中存在`meta`的`isNeedLogin`属性，判断该页面是否需要cas登陆验证，其中的isPersonalHomePage属性是判断是否需要个人中心流程验证的
