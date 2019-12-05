@@ -10,8 +10,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "docsify serve --open",
     "summary": "book sm -r ibase -o ./sidebar.md -t ''",
-    "summary-dir": "book sm -r 版本更新 -o ./版本更新/sidebar.md -t 'titleName'",
-    "summary-dir2": "book sm -r 笔记说明 -o ./笔记说明/sidebar.md -t 'titleName'"
+    "summary-ibase": "book sm -r ibase -o ./ibase/sidebar.md -t 代码笔记",
+    "summary-version": "book sm -r 版本更新 -o ./版本更新/sidebar.md -t 版本更新",
+    "summary-notice": "book sm -r 笔记说明 -o ./笔记说明/sidebar.md -t 笔记说明"
   },
   "dependencies": {
     "docsify": "^4.8.6",
