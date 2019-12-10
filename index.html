@@ -57,5 +57,10 @@
 <!-- 引入图片缩放 -->
 <script src="public/plugins/zoom-image-cdn.js"></script>
 <!-- 引入图片缩放 -->
+<script>
+    if (typeof navigator.serviceWorker !== 'undefined') {
+        navigator.serviceWorker.register('sw.js')
+    }
+</script>
 </body>
 </html>
