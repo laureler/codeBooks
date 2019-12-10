@@ -14,7 +14,7 @@
 |Port|目标主机数据库端口|1521|
 |SID|数据库唯一标识符|orcl|
 |User|用户名|zhjg_job|
-|Password|密码|sa123|
+|Password|密码|****|
 |URL|链接地址，链接地址由配置生成，本文配置生成为|jdbc:oracle:thin:@192.168.10.32:1521:orcl|
 |服务类型|选SID| SID|
 
@@ -32,10 +32,10 @@ jdbc.url=jdbc:oracle:thin:@//192.168.10.32:1521/orcl
 jdbc.urlParam=
 jdbc.validationQuery=select 1 from dual
 hibernate.dialect=org.hibernate.dialect.Oracle10gDialect
-hibernate.schema=ZHJG_JOB
+hibernate.schema=****
 
-jdbc.user=zhjg_job
-jdbc.pass=sa123
+jdbc.user=****
+jdbc.pass=****
 
 
 #最大活动连接数，一般是可能的并发数2倍
