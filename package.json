@@ -13,7 +13,8 @@
     "summary-ibase": "book sm -r ibase -o ./ibase/sidebar.md -t 代码笔记",
     "summary-version": "book sm -r 版本更新 -o ./版本更新/sidebar.md -t 版本更新",
     "summary-notice": "book sm -r 笔记说明 -o ./笔记说明/sidebar.md -t 笔记说明",
-    "summary-biaodashi": "book sm -r 表达式实例 -o ./表达式实例/sidebar.md -t 表达式实例"
+    "summary-biaodashi": "book sm -r 表达式实例 -o ./表达式实例/sidebar.md -t 表达式实例",
+    "summary-fe": "book sm -r 前段技术分享 -o ./前段技术分享/sidebar.md -t 前段技术分享"
   },
   "dependencies": {
     "docsify": "^4.8.6",
