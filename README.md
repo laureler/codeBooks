@@ -1,5 +1,4 @@
 <center><h2>文档说明</h2></center>
-
 ## 说明
 
 *  文档内容主要为自然资源开发部相关说明文档
@@ -11,11 +10,9 @@
 ## 已抽取模块[jar]
 - [x]  logStatistics [logStatisticsServiceInterface.jar/logStatisticsService.jar]
 
-
-## 计划抽取模块[jar]
-- [ ]  jobschedule[jobscheduleInterface.jar/jobscheduleService.jar]
-- [ ]  codedict[codedictService.jar/codedictServiceInterface.jar]
-- [ ]  customizeServ[customizeServService.jar/codedictServiceInterface.jar]
+- [x]  jobschedule[jobscheduleInterface.jar/jobscheduleService.jar]
+- [x]  codedict[codedictService.jar/codedictServiceInterface.jar]
+- [x]  customizeServ[customizeServService.jar/codedictServiceInterface.jar]
 
 ## 替代jar文件
 ```html
